@@ -1,3 +1,3 @@
 export const environments = {
-  baseURL: 'para pord'
+  baseURL: 'http://localhost:3000'
 }
