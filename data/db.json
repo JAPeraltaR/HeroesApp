@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "usuario": "John Doe",
       "email": "john.due@gmail.com"
     }
@@ -29,7 +29,8 @@
       "publisher": "DC Comics",
       "alter_ego": "Jay Garrick",
       "first_appearance": "Flash Comics #1",
-      "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen"
+      "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen",
+      "alt_img": "https://c8.alamy.com/comp/2RA1MBA/the-flash-superhero-2RA1MBA.jpg"
     },
     {
       "id": "dc-green",
@@ -166,6 +167,42 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "",
+      "superhero": "IRONMAN",
+      "publisher": "Marvel Comics",
+      "alter_ego": "tony Stark",
+      "first_appearance": "01 de marzo de 1963",
+      "characters": "Iron Man",
+      "alt_img": "https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Avengers_Endgame_poster_041_Variant_Textless.jpg/revision/latest?cb=20190629185509"
+    },
+    {
+      "id": "",
+      "superhero": "IRONMAN",
+      "publisher": "Marvel Comics",
+      "alter_ego": "tony Stark",
+      "first_appearance": "01 de marzo de 1963",
+      "characters": "Iron Man",
+      "alt_img": "https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Avengers_Endgame_poster_041_Variant_Textless.jpg"
+    },
+    {
+      "id": "",
+      "superhero": "IRONMAN",
+      "publisher": "Marvel Comics",
+      "alter_ego": "tony Stark",
+      "first_appearance": "01 de marzo de 1963",
+      "characters": "Iron Man",
+      "alt_img": "https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Avengers_Endgame_poster_041_Variant_Textless.jpg"
+    },
+    {
+      "id": "",
+      "superhero": "IRONMAN",
+      "publisher": "Marvel Comics",
+      "alter_ego": "tony Stark",
+      "first_appearance": "01 de marzo de 1963",
+      "characters": "Iron Man",
+      "alt_img": "https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Avengers_Endgame_poster_041_Variant_Textless.jpg"
     }
   ]
 }
