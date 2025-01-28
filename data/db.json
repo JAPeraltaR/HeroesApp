@@ -1,8 +1,8 @@
 {
   "users": [
     {
-      "id": "1",
-      "usuario": "John Doe",
+      "id": 1,
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -22,6 +22,30 @@
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
       "characters": "Kal-El"
+    },
+    {
+      "id": "dc-flash",
+      "superhero": "Flash",
+      "publisher": "DC Comics",
+      "alter_ego": "Jay Garrick",
+      "first_appearance": "Flash Comics #1",
+      "characters": "Jay Garrick, Barry Allen, Wally West, Bart Allen"
+    },
+    {
+      "id": "dc-green",
+      "superhero": "Green Lantern",
+      "publisher": "DC Comics",
+      "alter_ego": "Alan Scott",
+      "first_appearance": "All-American Comics #16",
+      "characters": "Alan Scott, Hal Jordan, Guy Gardner, John Stewart, Kyle Raynor, Jade, Sinestro, Simon Baz"
+    },
+    {
+      "id": "dc-arrow",
+      "superhero": "Green Arrow",
+      "publisher": "DC Comics",
+      "alter_ego": "Oliver Queen",
+      "first_appearance": "More Fun Comics #73",
+      "characters": "Oliver Queen"
     },
     {
       "id": "dc-wonder",
@@ -80,6 +104,14 @@
       "characters": "Steve Rogers"
     },
     {
+      "id": "marvel-iron",
+      "superhero": "Iron Man",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Tony Stark",
+      "first_appearance": "Tales of Suspense #39",
+      "characters": "Tony Stark"
+    },
+    {
       "id": "marvel-thor",
       "superhero": "Thor",
       "publisher": "Marvel Comics",
@@ -134,42 +166,6 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
-    },
-    {
-      "id": "",
-      "superhero": "IRONMAN",
-      "publisher": "Marvel Comics",
-      "alter_ego": "tony Stark",
-      "first_appearance": "01 de marzo de 1963",
-      "characters": "Iron Man",
-      "alt_img": "https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Avengers_Endgame_poster_041_Variant_Textless.jpg/revision/latest?cb=20190629185509"
-    },
-    {
-      "id": "",
-      "superhero": "IRONMAN",
-      "publisher": "Marvel Comics",
-      "alter_ego": "tony Stark",
-      "first_appearance": "01 de marzo de 1963",
-      "characters": "Iron Man",
-      "alt_img": "https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Avengers_Endgame_poster_041_Variant_Textless.jpg"
-    },
-    {
-      "id": "",
-      "superhero": "IRONMAN",
-      "publisher": "Marvel Comics",
-      "alter_ego": "tony Stark",
-      "first_appearance": "01 de marzo de 1963",
-      "characters": "Iron Man",
-      "alt_img": "https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Avengers_Endgame_poster_041_Variant_Textless.jpg"
-    },
-    {
-      "id": "",
-      "superhero": "IRONMAN",
-      "publisher": "Marvel Comics",
-      "alter_ego": "tony Stark",
-      "first_appearance": "01 de marzo de 1963",
-      "characters": "Iron Man",
-      "alt_img": "https://static.wikia.nocookie.net/marveldatabase/images/f/fe/Avengers_Endgame_poster_041_Variant_Textless.jpg"
     }
   ]
 }
