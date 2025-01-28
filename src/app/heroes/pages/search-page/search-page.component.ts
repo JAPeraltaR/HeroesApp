@@ -5,7 +5,7 @@ import { HeroService } from '../../service/hero.service';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 
 @Component({
-  selector: 'app-search-page',
+  selector: 'heroes-search-page',
   standalone: false,
 
   templateUrl: './search-page.component.html',

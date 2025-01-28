@@ -3,12 +3,13 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { Hero, Publisher } from '../../interfaces/hero.interface';
 import { HeroService } from '../../service/hero.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { switchMap } from 'rxjs';
+import { filter, switchMap, tap } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
+import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-dialog.component';
 
 @Component({
-  selector: 'app-new-page',
+  selector: 'heroes-new-page',
   standalone: false,
 
   templateUrl: './new-page.component.html',
@@ -79,13 +80,17 @@ export class NewPageComponent implements OnInit{
 
   onDeleteHero(): void {
     if( !this.currentHero ) throw Error('Hero id is required');
-    let dialogRef = this.dialog.open(UserProfileComponent, {
-      height: '400px',
-      width: '600px',
+
+    const dialogRef = this.dialog.open(ConfirmDialogComponent, {
+      data: this.heroForm.value,
     });
 
-
+    dialogRef.afterClosed().pipe(
+      filter(( res: boolean ) => res ),
+      switchMap( () => this.heroService.deleteHeroById( this.currentHero.id )),
+      filter( (wasDeleted: boolean) => wasDeleted)
+    ).subscribe( () => {
+      this.router.navigate(['/heroes'])
+    })
   }
-
-
 }

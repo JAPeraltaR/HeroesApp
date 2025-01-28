@@ -1,5 +1,5 @@
 <h1>
-  Editar/ Agregar
+  {{ currentHero.id? 'Editar' : 'Agregar' }}
   Heroe
   <small></small>
 </h1>
@@ -30,7 +30,7 @@
             </mat-form-field>
             <mat-form-field class="col-12">
               <mat-label>Creador</mat-label>
-              <mat-select required="" formControlName="publishers">
+              <mat-select required="" formControlName="publisher">
                 <mat-option *ngFor="let publisher of publishers"
                             [value]="publisher.id">
                   {{ publisher.desc }}
@@ -43,7 +43,8 @@
             </mat-form-field>
           </form>
           <div class="flex justify-content-between">
-            <button mat-flat-button color="warn">Borrar</button>
+            <button *ngIf="currentHero.id" mat-flat-button color="warn" (click)="onDeleteHero()">Borrar</button>
+            <span></span>
             <button mat-flat-button color="primary" (click)="onSubmit()">
               <mat-icon>save</mat-icon>
               Guardar
@@ -61,4 +62,3 @@
 
     </div>
   </div>
-<pre>{{ currentHero | json }}</pre>

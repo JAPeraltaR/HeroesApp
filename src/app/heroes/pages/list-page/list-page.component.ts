@@ -3,7 +3,7 @@ import { Hero } from '../../interfaces/hero.interface';
 import { HeroService } from '../../service/hero.service';
 
 @Component({
-  selector: 'app-list-page',
+  selector: 'heroes-list-page',
   standalone: false,
 
   templateUrl: './list-page.component.html'

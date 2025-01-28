@@ -39,8 +39,8 @@ export class HeroService {
 
   deleteHeroById( id: string ): Observable< boolean >{
     return this.http.delete(`${ this.baseURl }/heroes/${ id }`).pipe(
-      catchError(() => of(false)),
-      map( resp => true)
+      map( resp => true),
+      catchError(() => of(false))
     )
   }
 
