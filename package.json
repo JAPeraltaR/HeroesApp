@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "incognito": "ng serve & npx open-cli http://localhost:4200 -a 'Google Chrome' --args --incognito",
     "backend": "json-server --watch data/db.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -38,6 +39,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "open": "^10.1.0",
+    "open-cli": "^8.0.0",
     "typescript": "~5.7.2"
   }
 }

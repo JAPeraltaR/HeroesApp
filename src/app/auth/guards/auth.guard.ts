@@ -37,7 +37,7 @@ export class AuthGuard implements CanMatch, CanActivate{
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | Observable<boolean> {
     // console.log('can Activated');
     // console.log({ route, state });
-    return true;
+    return this.checkAuthStatus();
   }
 
 };

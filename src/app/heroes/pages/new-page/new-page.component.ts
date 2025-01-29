@@ -3,9 +3,10 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { Hero, Publisher } from '../../interfaces/hero.interface';
 import { HeroService } from '../../service/hero.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { filter, switchMap, tap } from 'rxjs';
+import { filter, switchMap } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
+
 import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-dialog.component';
 
 @Component({
@@ -52,8 +53,8 @@ export class NewPageComponent implements OnInit{
   }
 
   get currentHero(): Hero {
-    const hero = this.heroForm.value as Hero;
-    return hero;
+    const heroe = this.heroForm.value as Hero;
+    return heroe;
   }
 
   onSubmit(): void {
